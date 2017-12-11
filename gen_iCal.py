@@ -27,6 +27,7 @@ year = "2018"
 year2 = ""
 
 def splitLine(line, pos):
+    # cut out separating garbage "Karton\u00a7@_..\u00a3KE\u00e7Kehricht"
     item = line[0:pos-1]
     rest = line[pos+9:]
     return item, rest
